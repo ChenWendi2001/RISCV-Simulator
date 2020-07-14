@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Thread.h"
 
+
 void test(const char* str){
     Thread *thread = new Thread(str);
     while(true){
@@ -12,6 +13,6 @@ void test(const char* str){
 }
 
 int main() {
-    test("testcases2/heart.data");
+    test("testcases2/pi.data");
     return 0;
 }

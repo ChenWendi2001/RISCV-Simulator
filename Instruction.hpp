@@ -50,7 +50,11 @@ struct InstructionI : Instruction{
             rs2 = getDig(x,20,24);
             funct7 = getDig(x,25,31);
         }
-        else std::clog<<"imm = 0x"<<imm<<std::endl;
+
+#ifdef Debug
+        else
+            std::clog<<"imm = 0x"<<imm<<std::endl;
+#endif
     }
 };
 
@@ -64,7 +68,10 @@ struct InstructionS : Instruction{
         imm+= getDig(x,25,31)<<5;
         imm |= expend(getDig(x,31,31),11);
         t = S;
-        std::clog<<"imm = 0x"<<imm<<std::endl;
+#ifdef Debug
+
+            std::clog<<"imm = 0x"<<imm<<std::endl;
+#endif
     }
 };
 
@@ -80,7 +87,10 @@ struct InstructionSB : Instruction{
               + (getDig(x,31,31)<<12);
         imm |= expend(getDig(x,31,31),12);
         t = SB;
-        std::clog<<"imm = 0x"<<imm<<std::endl;
+#ifdef Debug
+
+            std::clog<<"imm = 0x"<<imm<<std::endl;
+#endif
     }
 };
 
@@ -90,7 +100,10 @@ struct InstructionU : Instruction{
         rd = getDig(x,7,11);
         imm = getDig(x,12,31)<<12;
         t = U;
-        std::clog<<"imm = 0x"<<imm<<std::endl;
+#ifdef Debug
+
+            std::clog<<"imm = 0x"<<imm<<std::endl;
+#endif
     }
 };
 
@@ -104,7 +117,10 @@ struct InstructionUJ : Instruction{
               + (getDig(x,31,31)<<20);
         imm|=expend(getDig(x,31,31),20);
         t = UJ;
-        std::clog<<"imm = 0x"<<imm<<std::endl;
+#ifdef Debug
+
+            std::clog<<"imm = 0x"<<imm<<std::endl;
+#endif
     }
 };
 
