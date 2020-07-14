@@ -12,7 +12,15 @@ void test(const char* str){
     }
 }
 
+void test(){
+    Thread *thread = new Thread;
+    while(true){
+        bool flag = thread->tick();
+        if(flag) break;
+    }
+}
+
 int main() {
-    test("testcases2/pi.data");
+    test();
     return 0;
 }

@@ -3,10 +3,10 @@
 //
 
 #include "Thread.h"
+#include <iostream>
 
 Thread::Thread() {
-    in.open("testcases/array_test1.data");
-    ana.analyze(in,mem);
+    ana.analyze(std::cin,mem);
     PC = new PCounter;
     f = new Fetcher(this);
     d = new Decoder(this);
