@@ -9,7 +9,7 @@
 #include <cstring>
 
 struct Memory{ // A Memory Simulator
-    unsigned char mem[0x4000000];
+    unsigned char mem[0x40000];
 
     Memory(){
         memset(mem,0,sizeof(mem));

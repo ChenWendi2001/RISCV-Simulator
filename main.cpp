@@ -46,7 +46,7 @@ void run_test(){
 int main() {
     //serial_test("testcases2/array_test1.data");
     //parallel_test("testcases2/bulgarian.data");
-    //parallel_test_with_predictor("testcases2/bulgarian.data");
+    //parallel_test_with_predictor("testcases2/pi.data");
     run_test();
     return 0;
 }
