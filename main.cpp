@@ -35,9 +35,18 @@ void parallel_test_with_predictor(const char* str){
     thread->pre.printAcc();
 }
 
+void run_test(){
+    Thread *thread = new Thread;
+    while(true){
+        bool flag = thread->parallel_with_predictor();
+        if(flag) break;
+    }
+}
+
 int main() {
     //serial_test("testcases2/array_test1.data");
     //parallel_test("testcases2/bulgarian.data");
-    parallel_test_with_predictor("testcases2/bulgarian.data");
+    //parallel_test_with_predictor("testcases2/bulgarian.data");
+    run_test();
     return 0;
 }
