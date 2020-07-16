@@ -10,7 +10,7 @@
 #include "COMMON.h"
 
 class Predictor{
-    unsigned char mem[0x4000000];
+    unsigned char mem[0x20000];
 
     int countAcc;
 public:
