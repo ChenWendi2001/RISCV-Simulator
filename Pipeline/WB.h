@@ -9,7 +9,9 @@ class Thread;
 
 class Writer{
     Thread * thread;
+
 public:
+    Imm rd;
     Writer(Thread* th);
     void tick();
 };

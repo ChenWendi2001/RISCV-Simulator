@@ -9,15 +9,20 @@
 
 class PCounter{ // A Program Counter
     Imm prev,next;
+
 public:
+    Imm origin;
+
     PCounter():prev(0),next(0){}
 
     Imm read(){return prev;}
     void write(Imm imm){next = imm;}
 
     Imm readNext(){return next;}
-    void tick(){prev = next;}
 
+    void tick(){prev = next; next = prev+4;}
+
+    void reGet(){prev = origin;next = prev+4;}
 };
 
 #endif //RISCV_SIMULATOR_PCOUNTER_HPP

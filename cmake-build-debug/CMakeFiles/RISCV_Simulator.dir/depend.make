@@ -12,6 +12,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Pipeline/ID.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o: ../Thread.h
 
@@ -26,6 +27,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Pipeline/ID.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o: ../Thread.h
 
@@ -40,6 +42,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Pipeline/IF.cpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o: ../Thread.h
 
@@ -54,6 +57,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Pipeline/MEM.cpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o: ../Thread.h
 
@@ -68,6 +72,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Pipeline/WB.cpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o: ../Thread.h
 
@@ -81,6 +86,7 @@ CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Pipeline/ID.h
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Thread.cpp
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o: ../Thread.h
@@ -95,6 +101,7 @@ CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Pipeline/ID.h
 CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Pipeline/IF.h
 CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Pipeline/MEM.h
 CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Pipeline/WB.h
+CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Predictor.hpp
 CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Register.hpp
 CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../Thread.h
 CMakeFiles/RISCV_Simulator.dir/main.cpp.o: ../main.cpp

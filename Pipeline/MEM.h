@@ -6,7 +6,7 @@
 #define RISCV_SIMULATOR_MEM_H
 #include "../Thread.h"
 #include <queue>
-
+#include "../Instruction.hpp"
 class Thread;
 
 class MemAccessor{
@@ -18,6 +18,12 @@ public:
 
     MemAccessor(Thread* th);
 
+    Instruction* inst;
+
+    Instruction instTemp;
+
     void tick();
+
+    void get();
 };
 #endif //RISCV_SIMULATOR_MEM_H

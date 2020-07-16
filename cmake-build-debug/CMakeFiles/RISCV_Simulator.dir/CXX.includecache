@@ -85,6 +85,8 @@ MEM.h
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 queue
 -
+../Instruction.hpp
+/mnt/c/Users/12779/Desktop/RISCV-Simulator/Instruction.hpp
 
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.cpp
 WB.h
@@ -93,6 +95,14 @@ WB.h
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
 ../Thread.h
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
+
+/mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
+iostream
+-
+cstring
+-
+COMMON.h
+/mnt/c/Users/12779/Desktop/RISCV-Simulator/COMMON.h
 
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
 COMMON.h
@@ -103,9 +113,13 @@ cstring
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.cpp
 Thread.h
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
+iostream
+-
 
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 iostream
+-
+set
 -
 fstream
 -
@@ -115,6 +129,8 @@ PCounter.hpp
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/PCounter.hpp
 Analyzer.hpp
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Analyzer.hpp
+Predictor.hpp
+/mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
 Register.hpp
 /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
 Pipeline/IF.h

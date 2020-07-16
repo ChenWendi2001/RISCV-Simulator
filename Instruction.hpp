@@ -10,7 +10,8 @@
 #include <iomanip>
 struct Instruction{
     enum type{R , I , S , SB , U , UJ };
-
+    unsigned int addr;
+    unsigned int inst;
     unsigned int opcode, rd, funct3, rs1, rs2, funct7;
     Imm imm;
     type t;
@@ -22,10 +23,26 @@ struct Instruction{
     unsigned int expend(int flag,int index){
         return flag?(0xffffffff)<<index:0;
     }
+
+    void operator=(Instruction &other){
+        addr = other.addr;
+        inst = other.inst;
+        opcode = other.opcode;
+        rd = other.rd;
+        funct3 = other.funct3;
+        rs1 = other.rs1;
+        rs2 = other.rs2;
+        funct7 = other.funct7;
+        imm = other.imm;
+        t = other.t;
+    }
 };
+
+
 
 struct InstructionR : Instruction{
     InstructionR(const unsigned int& x ){
+        inst = x;
         opcode = getDig(x,0,6);
         rd = getDig(x,7,11);
         funct3 = getDig(x,12,14);
@@ -38,6 +55,7 @@ struct InstructionR : Instruction{
 
 struct InstructionI : Instruction{
     InstructionI(const unsigned int& x ){
+        inst = x;
         opcode = getDig(x,0,6);
         rd = getDig(x,7,11);
         funct3 = getDig(x,12,14);
@@ -45,9 +63,9 @@ struct InstructionI : Instruction{
         imm = getDig(x,20,31)|expend(getDig(x,31,31),11);
         t = I;
         if(funct3==0b001||funct3==0b101){
-            imm=0;
+            rs2 = -1;
             t = R;
-            rs2 = getDig(x,20,24);
+            imm = getDig(x,20,24);
             funct7 = getDig(x,25,31);
         }
 
@@ -60,6 +78,8 @@ struct InstructionI : Instruction{
 
 struct InstructionS : Instruction{
     InstructionS(const unsigned int& x ){
+        inst = x;
+        rd = -1;
         opcode = getDig(x,0,6);
         imm = getDig(x,7,11);
         funct3 = getDig(x,12,14);
@@ -77,6 +97,8 @@ struct InstructionS : Instruction{
 
 struct InstructionSB : Instruction{
     InstructionSB(const unsigned int& x ){
+        inst = x;
+        rd = -1;
         opcode = getDig(x,0,6);
         imm = getDig(x,8,11)<<1;
         funct3 = getDig(x,12,14);
@@ -96,9 +118,11 @@ struct InstructionSB : Instruction{
 
 struct InstructionU : Instruction{
     InstructionU(const unsigned int& x ){
+        inst = x;
         opcode = getDig(x,0,6);
         rd = getDig(x,7,11);
         imm = getDig(x,12,31)<<12;
+        rs1 = rs2 = -1;
         t = U;
 #ifdef Debug
 
@@ -109,8 +133,10 @@ struct InstructionU : Instruction{
 
 struct InstructionUJ : Instruction{
     InstructionUJ(const unsigned int& x ){
+        inst = x;
         opcode = getDig(x,0,6);
         rd = getDig(x,7,11);
+        rs1 = rs2 = -1;
         imm = getDig(x,21,30)<<1;
         imm+= (getDig(x,20,20)<<11)
               + (getDig(x,12,19)<<12)

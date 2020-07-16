@@ -3,10 +3,11 @@
 //
 #include "IF.h"
 #include <iomanip>
-Fetcher::Fetcher(Thread *th){thread = th;}
+Fetcher::Fetcher(Thread *th){thread = th;instruction=0;}
 
 void Fetcher::tick(){
     instruction = thread->mem.read(thread->PC->read());
+    addr = thread->PC->read();
 #ifdef Debug
     std::clog<<"---------------------------------"<<std::endl;
     std::clog<<"PC = 0x"<<std::hex<<thread->PC->read()<<std::endl;

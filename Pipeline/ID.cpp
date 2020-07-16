@@ -5,11 +5,19 @@
 
 Decoder::Decoder(Thread* th):thread(th),instruction(NULL){}
 
+void Decoder::flush() {if(instruction) delete instruction;instruction=NULL;}
+
 Decoder::~Decoder(){if(instruction) delete instruction;}
 
-void Decoder::tick(){
-    if(instruction) delete instruction;
+void Decoder::getAddr(unsigned int x) {
+    addr = x;
+}
+
+bool Decoder::tick(){
+    if(instruction) delete instruction,instruction=NULL;
     inst = thread->f->getIns();
+    if(inst==0)return false;
+    getAddr(thread->f->addr);
     switch (inst & 0b1111111){
         case 0b0110011:
             instruction = new InstructionR(inst);
@@ -39,4 +47,31 @@ void Decoder::tick(){
             instruction = new InstructionU(inst);
             break;
     }
+    instruction->addr = addr;
+    thread->e->get();
+    thread->m->get();
+
+    if(instruction->t == Instruction::type::SB) {
+        if (instruction->funct3 == 0b000) {//BEQ
+            pc = thread->PC->read() + instruction->imm;
+            origin = thread->PC->read();
+        } else if (instruction->funct3 == 0b001) {//BNE
+            pc = thread->PC->read() + instruction->imm;
+            origin = thread->PC->read();
+        } else if (instruction->funct3 == 0b100) {//BLT
+            pc = thread->PC->read() + instruction->imm;
+            origin = thread->PC->read();
+        } else if (instruction->funct3 == 0b101) {//BGE
+            pc = thread->PC->read() + instruction->imm;
+            origin = thread->PC->read();
+        } else if (instruction->funct3 == 0b110) {//BLTU
+            pc = thread->PC->read() + instruction->imm;
+            origin = thread->PC->read();
+        } else if (instruction->funct3 == 0b111) {//BGEU
+            pc = thread->PC->read() + instruction->imm;
+            origin = thread->PC->read();
+        }
+        return true;
+    }
+    return false;
 }

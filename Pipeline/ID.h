@@ -16,13 +16,23 @@ class Decoder{
 
     Imm inst;
 
+    unsigned int addr;
+
 public:
+    Imm pc;
+
+    Imm origin;
+
     Instruction* instruction;
 
     Decoder(Thread* th);
 
     ~Decoder();
 
-    void tick();
+    bool tick();
+
+    void flush();
+
+    void getAddr(unsigned int x);
 };
 #endif //RISCV_SIMULATOR_ID_H

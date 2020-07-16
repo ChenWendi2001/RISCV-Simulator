@@ -14,6 +14,8 @@ class Fetcher{
 
     Thread* thread;
 
+
+
     Imm instruction;
 
 public:
@@ -24,6 +26,7 @@ public:
 
     Imm getIns();
 
+    Imm addr;
 };
 
 #endif //RISCV_SIMULATOR_IF_H

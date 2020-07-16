@@ -13,6 +13,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/EX.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/IF.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o
@@ -27,6 +28,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/ID.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/IF.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o
@@ -41,6 +43,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/IF.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/IF.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o
@@ -55,6 +58,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/MEM.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.cpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o
@@ -69,6 +73,7 @@ CMakeFiles/RISCV_Simulator.dir/Pipeline/WB.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.cpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
 CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o
@@ -82,6 +87,7 @@ CMakeFiles/RISCV_Simulator.dir/Thread.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/IF.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.cpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
@@ -96,6 +102,7 @@ CMakeFiles/RISCV_Simulator.dir/main.cpp.o
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/IF.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/MEM.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h
+ /mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/Thread.h
  /mnt/c/Users/12779/Desktop/RISCV-Simulator/main.cpp

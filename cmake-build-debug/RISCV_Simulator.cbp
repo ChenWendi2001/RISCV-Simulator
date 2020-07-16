@@ -129,6 +129,9 @@
 		<Unit filename="/mnt/c/Users/12779/Desktop/RISCV-Simulator/Pipeline/WB.h">
 			<Option target="RISCV_Simulator"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/12779/Desktop/RISCV-Simulator/Predictor.hpp">
+			<Option target="RISCV_Simulator"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/12779/Desktop/RISCV-Simulator/Register.hpp">
 			<Option target="RISCV_Simulator"/>
 		</Unit>
